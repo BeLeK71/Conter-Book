@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/dbed6b6114.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <script src="./js/main.js"></script>
+    <!--Contact book adder -->
+
+    <div class="main-container">
+      <div class="record-input">
+        <h2>Contact Book</h2>
+        <div class="entry-form">
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+
+            <label for="contact-num">Phone Number</label>
+            <input type="text" id="contact-num" />
+
+            <label for="contact-photo">Photo</label>
+            <input type="file" id="contact-photo" accept="image/*" />
+          </form>
+          <!--ALERT-->
+          <span class="message"></span>
+
+          <div class="input-btns">
+            <button type="submit" id="submit-btn">
+              <span> <i class="fas fa-plus"></i> </span>Add Contact
+            </button>
+
+            <button type="button" id="cancel-btn">
+              <span> <i class="fas fa-times"></i> </span>Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--Contactb book list-->
+      <div class="record-display">
+        <h2>Available Contacts</h2>
+        <button type="button" id="reset-btn">Reset</button>
+
+        <div class="record-container">
+          <!--patient zero-->
+
+          <div class="record-item">
+            <div class="record-el">
+              <span id="labeling">Contact Photo: </span>
+              <span id="contact-photo-content"
+                ><img
+                  id="josh_hutcherson_whistle"
+                  src="./css/josh_hutcherson_whistle.jpg"
+                  alt=""
+                />
+              </span>
+            </div>
+
+            <div class="record-el">
+              <span id="labeling">Name: </span>
+              <span id="name-content">Josh Hutcherson</span>
+            </div>
+
+            <div class="record-el">
+              <span id="labeling">Contact Number: </span>
+              <span id="contact-num-content">0550-123-123</span>
+            </div>
+
+            <button type="button" id="delete-btn">
+              <span> <i class="fas fa-trash"></i> </span> Delete
+            </button>
+          </div>
+
+          <!--End of patien zero-->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
